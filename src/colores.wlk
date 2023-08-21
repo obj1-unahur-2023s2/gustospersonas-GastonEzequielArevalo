@@ -25,3 +25,10 @@ object pardo{
 		return false
 	}
 }
+
+object naranja{
+	
+	method esFuerte(){
+		return true
+	}
+}

@@ -78,6 +78,60 @@ object placa{
 	}
 }
 
+object arito{
+	
+	method color(){
+		return celeste
+	}
+	
+	method material(){
+		return cobre
+	}
+	
+	method peso(){
+		return 180
+	}
+}
+
+object banquito{
+	
+	method color(){
+		return naranja
+	}
+	
+	method material(){
+		return madera
+	}
+	
+	method peso(){
+		return 1700
+	}
+}
+
+object cajita{
+	var objetoDentroDeLaCajita = banquito
+	
+	method objetoDentroDeLaCajita(){
+		return objetoDentroDeLaCajita	
+	}
+	
+	method cambiarObjetoDeLaCajita(objetoNuevo){
+		objetoDentroDeLaCajita = objetoNuevo
+	}
+		
+	method color(){
+		return rojo
+	}
+	
+	method material(){
+		return cobre
+	}
+	
+	method peso(){
+		return 400 + objetoDentroDeLaCajita.peso()
+	}
+}
+
 
 
 
